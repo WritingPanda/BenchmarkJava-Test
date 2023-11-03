@@ -88,4 +88,4 @@ jobs:
     - name: Upload Artifacts to Workflow
       uses: actions/upload-artifact@v3
       with:      
-        path: ${{ runner.workspace }}
+        path: ${{ runner.workspace }}/*.pdf
