@@ -84,6 +84,7 @@ jobs:
       uses: ctcampbell/github-security-report-action@main
       with:
         token: ${{ secrets.SECURITY_TOKEN }}
+        outputDir: ${{ runner.workspace }}
 
     - name: Upload Artifacts to Workflow
       uses: actions/upload-artifact@v3
