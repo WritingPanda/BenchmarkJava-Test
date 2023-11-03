@@ -80,10 +80,10 @@ jobs:
       with:
         category: "/language:${{matrix.language}}"
     
-    - name: Upload Artifacts to Workflow
-      uses: actions/upload-artifact@v3
-      with:      
-        path: ${{ runner.workspace }}/results/*.sarif
+    # - name: Upload Artifacts to Workflow
+    #   uses: actions/upload-artifact@v3
+    #   with:      
+    #     path: ${{ runner.workspace }}/results/*.sarif
     
     - name: Generate Security Report
       uses: peter-murray/github-security-report-action@v2
