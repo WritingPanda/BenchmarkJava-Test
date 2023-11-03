@@ -81,11 +81,11 @@ jobs:
         category: "/language:${{matrix.language}}"
     
     - name: Generate Security Report
-      uses: ctcampbell/github-security-report-action@v2
+      uses: ctcampbell/github-security-report-action@main
       with:
         token: ${{ secrets.SECURITY_TOKEN }}
 
-    - name: Upload Artifacts to Workflow
-      uses: actions/upload-artifact@v3
-      with:      
-        path: ${{ runner.workspace }}/*.pdf
+    # - name: Upload Artifacts to Workflow
+    #   uses: actions/upload-artifact@v3
+    #   with:      
+    #     path: ${{ runner.workspace }}/*.pdf
